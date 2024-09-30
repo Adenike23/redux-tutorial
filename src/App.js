@@ -6,7 +6,7 @@ import Header from './components/Header';
 import UserProfile from './components/UserProfile'
 
 function App() {
-  const isLoggedIn = useSelector(state => state.auth) //state is an argument passed in by react-redux
+  const isLoggedIn = useSelector(state => state.auth.isAuth) //state is an argument passed in by react-redux
   
   return (
     <>

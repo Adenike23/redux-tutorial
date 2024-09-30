@@ -4,7 +4,7 @@ import { authActions } from '../store/auth';
 
 const Header = () => {
   const dispatch = useDispatch();
-  const isLoggedIn = useSelector(state => state.auth)
+  const isLoggedIn = useSelector(state => state.auth.isAuth)
 
   const handleLogout = () => {
     dispatch(authActions.logout())
